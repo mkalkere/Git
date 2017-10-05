@@ -34,3 +34,44 @@ git commit -m "Add comment here"
 ```
 >_commits the files tracked/added to the statging to the local repository_
 
+**## How to get git commit history**
+```
+git log
+```
+>_displays the commit/merge hostory in the descending order_
+
+**##How to add/link the remote repository to the local repository**
+```
+git remote add origin "https://github.com/mkalkere/Git.git"
+```
+>_adds or links the local git repository to the remote repository. In this case local repository will be aliased as `origin` and the remote repository as `master`_
+
+**##How to check the remote git url**
+```
+git remote -v 
+    OR
+git remote --verbose
+```
+>_Displays the origin name and the remote url_
+
+Ex:
+>_origin  https://github.com/mkalkere/Git.git (fetch)_
+
+>_origin  https://github.com/mkalkere/Git.git (push)_
+
+**##How to rename the git remote name**
+```
+git remote <old_name> <new_name>
+git remote origin origin1
+```
+>_In this case the old name `origin` will be renamed to `origin1`_
+
+**##How to remove the remote tracking**
+```
+git remote remove <remote_name>
+git remote rm <remote_name>
+
+git remote remove origin1
+git remote rm origin1
+```
+>_Removes the remote tracking configuration which was named `origin1`_
