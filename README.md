@@ -12,4 +12,4 @@
 ```
 git status
 ```
->_gets the status of the git. specifying if there a any pending changes etc_
+>_gets the status of the git. specifies if there a any pending changes etc_
